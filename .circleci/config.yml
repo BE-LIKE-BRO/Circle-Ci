@@ -23,3 +23,8 @@ jobs:
           path: test/
       - store_artifacts:
           path: test-results
+workflows:
+  build:
+    jobs:
+      - run_tests
+      -
