@@ -34,7 +34,7 @@ jobs:
       - snyk/scan:
           fail-on-issues: false
           monitor-on-build: false
-          
+          token-variable: SNYK_TOKEN
 workflows:
   build:
     jobs:
