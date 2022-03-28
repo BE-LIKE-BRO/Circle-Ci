@@ -32,8 +32,6 @@ jobs:
           name: Snyk Scan Application files 
           command: npm install 
       - snyk/scan:
-          fail-on-issues: false
-          monitor-on-build: false
           token-variable: SNYK_TOKEN
 workflows:
   build:
