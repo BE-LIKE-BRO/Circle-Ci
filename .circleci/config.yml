@@ -31,8 +31,7 @@ jobs:
       - run:
           name: Snyk Scan Application files 
           command: npm install 
-      - snyk/scan:
-          token-variable: SNYK_TOKEN
+      
 workflows:
   build:
     jobs:
